@@ -1,11 +1,10 @@
 let express = require('express');
 let app = express();
 
-let name = "Hello World"
-console.log(name)
+let newFile= __dirname + 'views/index.html';
 
 app.get('/', (req, res)=>{
-    res.send("Hello Express")
+    res.send(newFile)
 })
 
 
